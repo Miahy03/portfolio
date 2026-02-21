@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ANDRIAMAROMANANA Nija Miahy | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Open Sans', sans-serif;}
+    body{background:linear-gradient(120deg,#1e3a8a,#0f172a);color:#e2e8f0;line-height:1.6;}
+    header{position:sticky;top:0;background:rgba(2,6,23,.85);backdrop-filter:blur(10px);padding:15px 40px;z-index:1000;}
+    nav{display:flex;justify-content:space-between;align-items:center;}
+    nav a{color:#e2e8f0;margin-left:15px;text-decoration:none;font-weight:600;transition:.3s;}
+    nav a:hover{color:#00CED1;}
+    .hero{min-height:85vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;}
+    .hero img{width:150px;height:150px;border-radius:50%;object-fit:cover;margin-bottom:15px;}
+    .hero h1{font-size:2.7rem;color:#00CED1;font-family:'Montserrat', sans-serif;}
+    .hero p{max-width:720px;margin-top:15px;}
+    .btn{margin-top:25px;background:#00CED1;color:#020617;border:none;padding:12px 20px;border-radius:10px;font-weight:bold;cursor:pointer;transition:.3s;}
+    .btn i{margin-right:8px;}
+    .btn:hover{transform:scale(1.05);background:#7FFFD4;}
+    section{padding:80px 20px;max-width:1100px;margin:auto;}
+    h2{text-align:center;margin-bottom:40px;font-size:2rem;font-family:'Montserrat', sans-serif;color:#00CED1;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
+    .card{background:rgba(15,23,42,.9);padding:25px;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,.4);transition:.4s;}
+    .card:hover{transform:translateY(-8px) scale(1.03);box-shadow:0 15px 30px rgba(0,0,0,.6);}
+    .card h3{color:#7FFFD4;margin-bottom:10px;}
+    .card p{color:#e2e8f0;font-size:0.95rem;line-height:1.4;}
+    .skills span{display:inline-block;margin:5px;padding:8px 12px;background:#1e293b;border-radius:20px;font-size:.85rem;}
+    .stats{display:flex;justify-content:center;gap:40px;margin-top:30px;}
+    .stat{text-align:center;}
+    .stat h3{font-size:1.8rem;color:#00CED1;}
+    .stat p{color:#7FFFD4;font-weight:600;}
+    form{display:flex;flex-direction:column;gap:12px;max-width:500px;margin:auto;}
+    input,textarea{padding:12px;border-radius:10px;border:none;background:#1e293b;color:#fff;}
+    input:focus,textarea:focus{outline:2px solid #00CED1;}
+    footer{background:#020617;text-align:center;padding:25px;margin-top:40px;}
+    .fade{opacity:0;transform:translateY(30px);transition:1s;}
+    .show{opacity:1;transform:translateY(0);}
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <strong>ANDRIAMAROMANANA Nija Miahy</strong>
+    <div>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero fade">
+  <img src="img/NijaMiahy.jfif" alt="Nija Miahy Photo">
+  <h1>ANDRIAMAROMANANA Nija Miahy</h1>
+  <p>I am a Computer Science student at HEI Madagascar, creating websites and logos while constantly learning new technologies to improve my personal and professional projects.</p>
+  <button class="btn" onclick="scrollToContact()"><i class="fas fa-paper-plane"></i> Work With Me</button>
+  <div class="stats">
+    <div class="stat"><h3>3</h3><p>Personal Projects</p></div>
+    <div class="stat"><h3>Daily</h3><p>Learning</p></div>
+    <div class="stat"><h3>100%</h3><p>Drive</p></div>
+  </div>
+</section>
+
+<section id="about" class="fade">
+  <h2>About Me</h2>
+  <p style="text-align:center">Currently learning Java backend development, database design, and advanced JavaScript. My goal is to become a professional software engineer and create useful digital solutions for businesses in Madagascar.</p>
+  <div class="skills" style="text-align:center;margin-top:20px">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Java</span>
+    <span>JDBC</span>
+    <span>Web Design</span>
+    <span>Logo Design</span>
+  </div>
+</section>
+
+<section id="services" class="fade">
+  <h2>Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Website Development</h3>
+      <p>I build clean, responsive websites for students, entrepreneurs, and small businesses.</p>
+    </div>
+    <div class="card">
+      <h3>Logo Design</h3>
+      <p>I create unique logos to help establish a professional and clear brand identity.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="fade">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Student Job Site</h3>
+      <p>A responsive website listing student job offers with search and posting features. Modern layout and intuitive navigation.</p>
+    </div>
+    <div class="card">
+      <h3>Java JDBC Project</h3>
+      <p>Database management project using Java and PostgreSQL to handle data and generate statistics. Clean code structure and performance-focused.</p>
+    </div>
+    <div class="card">
+      <h3>OBX Logo</h3>
+      <p>Minimalist logo inspired by nature and the ocean. Created with attention to brand identity and aesthetics.</p>
+    </div>
+    <div class="card">
+      <h3>New JavaScript Project</h3>
+      <p>Interactive JS application under development to enhance skills and explore modern web techniques.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="fade" style="padding:80px 20px; max-width:1100px; margin:auto; text-align:center;">
+  <h2 style="color:#7FFFD4; margin-bottom:20px;">Contact Me</h2>
+  <p style="color:#e2e8f0; margin-bottom:50px;">
+    Do you have a project in mind? Feel free to reach out! I am always open to new opportunities and collaborations.
+  </p>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px;">
+    <div class="card">
+      <i class="fas fa-envelope" style="font-size:30px; color:#7FFFD4; margin-bottom:15px;"></i>
+      <h3 style="color:#7FFFD4; margin-bottom:10px;">Email</h3>
+      <p style="color:#e2e8f0;">miahyandria474@gmail.com</p>
+    </div>
+    <div class="card">
+      <i class="fab fa-linkedin" style="font-size:30px; color:#7FFFD4; margin-bottom:15px;"></i>
+      <h3 style="color:#7FFFD4; margin-bottom:10px;">LinkedIn</h3>
+      <p style="color:#e2e8f0;">/in/Miahy Andria</p>
+    </div>
+    <div class="card">
+      <i class="fab fa-github" style="font-size:30px; color:#7FFFD4; margin-bottom:15px;"></i>
+      <h3 style="color:#7FFFD4; margin-bottom:10px;">GitHub</h3>
+      <p style="color:#e2e8f0;">@Miahy03</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-phone" style="font-size:30px; color:#7FFFD4; margin-bottom:15px;"></i>
+      <h3 style="color:#7FFFD4; margin-bottom:10px;">Phone</h3>
+      <p style="color:#e2e8f0;">+261 32 71 269 21 </p>
+    </div>
+  </div>
+
+  <form onsubmit="sendMessage(event)" style="margin-top:50px;">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="4" required></textarea>
+    <button class="btn" type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>Built and designed by ANDRIAMAROMANANA Nija Miahy.</p>
+</footer>
+
+<script>
+function sendMessage(e){e.preventDefault();alert('Message sent successfully!');}
+function scrollToContact(){document.getElementById('contact').scrollIntoView({behavior:'smooth'});}
+const faders=document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{
+  faders.forEach(el=>{
+    const top=el.getBoundingClientRect().top;
+    if(top<window.innerHeight-100){el.classList.add('show');}
+  });
+});
+</script>
+
+</body>
+</html>
